@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.lab11.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:id="@+id/id_imgMicrofono"
+        android:layout_margin="10dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/ic_microfono_off" />
+
+    <TextView
+        android:id="@+id/id_txtInstrucciones"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Presione Grabar para comenzar ha escuchar" />
+
+
+    <TableRow
+        android:id="@+id/Cabecera"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnStartRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Grabar"
+            android:onClick="startRecording"/>
+
+        <Button
+            android:id="@+id/btnStopRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:enabled="false"
+            android:onClick="stopRecording"
+            android:text="Detener" />
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruta: "
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/id_ruta"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Ubicación"
+        />
+
+
+</LinearLayout>
